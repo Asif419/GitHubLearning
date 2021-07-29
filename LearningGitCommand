@@ -1,3 +1,5 @@
+Introduction:
+
 Git is a version controller.
 Working directory to Stage is known as add in git
 Stage to local repositor is known as commit
@@ -6,37 +8,43 @@ Remote to local repository (only changes) is fetch
 Remote to local repository (everything) is pull
 git pull = fetch + merge
 
-Making folder: mkdir one [folder name]
-Go to folder: cd one [folder name]
-Making file: touch one.txt [file name]
-To clear screen: clear 
-		ctl+l
-Initializing local repository:  git init
-Check list on the folder: ls
-Remote to local: git clone url
-Check what chances happed: git status
-Check current directory: pwd
-Local to Stage: git add --all [everything will go to stage]
-	            git add -A
-	            git add . [all from current folder]
-	            git add * [without deleted file staged everything]
-	            git add one.txt [file name]
-	            git add *.txt [all file with .txt extention]
-Stage to Local (back): git reset
-Staged to local repository: git commit -m “I have changed something” [message with “”]
-local repository to working repository (not staged) : git reset HEAD~
-Backing deleted file: git reset --hard 
-Remove and staged: git rm one.txt [file name]
-Remove a changed file: git rm one.txt -f
-Don’t remove from working directory but staged that deleted: git rm one.txt --cached
-Check branch: git branch
-Create branch: git branch development [branch name]
-Switch to another branch: git checkout development [branch name]
-Merging two branches: git merge main -m “merging something”
-Local to remote: git push origin main [branch name]
-		 git push origin dev
-Remote to local: git fetch
-			and then I have to call merge If I want changes in working file lik
-		 git merge
 
-add files to empty remote repository: git push --set-upstream url (empty remote repository url) master
+Commands:
+
+Making folder---------------------------: mkdir one [folder name]
+Go to folder----------------------------: cd one [folder name]
+Making file-----------------------------: touch one.txt [file name]
+To clear screen-------------------------: clear 
+				    	  ctl+l
+Initializing local repository-----------:  git init
+Check list on the folder----------------: ls
+Remote to local-------------------------: git clone url
+Check what chances happed---------------: git status
+Check current directory-----------------: pwd
+Local to Stage--------------------------: git add --all [everything will go to stage]
+					  git add -A
+					  git add . [all from current folder]
+					  git add * [without deleted file staged everything]
+					  git add one.txt [file name]
+					  git add *.txt [all file with .txt extention]
+Stage to Local (back)-------------------: git reset
+Staged to local repository--------------: git commit -m “I have changed something” [message with “”]
+local repository to 
+working repository (not staged) --------: git reset HEAD~
+Backing deleted file--------------------: git reset --hard 
+Remove and staged-----------------------: git rm one.txt [file name]
+Remove a changed file-------------------: git rm one.txt -f
+Don’t remove from working
+directory but staged that deleted-------: git rm one.txt --cached
+Check branch----------------------------: git branch
+Create branch---------------------------: git branch development [branch name]
+Switch to another branch----------------: git checkout development [branch name]
+Merging two branches--------------------: git merge main -m “merging something”
+Local to remote-------------------------: git push origin main [branch name]
+					  git push origin dev
+Remote to local-------------------------: git fetch
+						and then I have to call merge If I want changes in working file lik
+				    	  git merge
+
+add files to empty
+remote repository-----------------------: git push --set-upstream url (empty remote repository url) master
