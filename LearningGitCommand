@@ -2,7 +2,7 @@ Introduction:
 
 Git is a version controller.
 Working directory to Stage is known as add in git
-Stage to local repositor is known as commit
+Stage to local repository is known as commit
 Local repository to remote is push
 Remote to local repository (only changes) is fetch
 Remote to local repository (everything) is pull
@@ -48,3 +48,6 @@ Remote to local-------------------------: git fetch
 
 add files to empty
 remote repository-----------------------: git push --set-upstream url (empty remote repository url) master
+add files to 
+old repository--------------------------: git remote add <name> <url>
+					  git push --set-upstream <url> <branch name> 
