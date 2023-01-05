@@ -29,6 +29,8 @@ Local to Stage--------------------------: git add --all [everything will go to s
 					  git add *.txt [all file with .txt extention]
 Stage to Local (back)-------------------: git reset
 Staged to local repository--------------: git commit -m “I have changed something” [message with “”]
+Local repository to remote--------------: git remote add origin https://github.com/Asif419/second-repo.git [add origin]
+Local repository to another repository--: git remote add set-url origin https://github.com/Asif419/second-repo.git
 local repository to 
 working repository (not staged) --------: git reset HEAD~
 Backing deleted file--------------------: git reset --hard 
