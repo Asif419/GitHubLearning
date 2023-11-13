@@ -53,3 +53,10 @@ remote repository-----------------------: git push --set-upstream url (empty rem
 add files to 
 old repository--------------------------: git remote add <name> <url>
 					  git push --set-upstream <url> <branch name> 
+
+How to recover file:
+1. First I can add a remote repo to my folder by: git remote add gitlab https://course-gitlab.tuni.fi/git-course/basics-materials.git
+2. then: git fetch gitlab
+3. then: git merge gitlab/master --allow-unrelated-histories
+4. git log -- mergesort.py (if have to go to the targeted folder)
+5. git checkout <commit number> -- <filename>
